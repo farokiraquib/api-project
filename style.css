@@ -1,0 +1,100 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #d9e2ff);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 60px;
+}
+
+/* Container for input and button */
+div {
+    margin-bottom: 30px;
+}
+
+#userInput {
+    width: 250px;
+    padding: 10px 12px;
+    border: 2px solid #4a90e2;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+#userInput:focus {
+    border-color: #6da6ff;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#getProfileBtn:hover {
+    background-color: #3e7bcc;
+}
+
+/* Profile card styling */
+#profileFromGitHub {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+#profileFromGitHub img {
+    margin-bottom: 15px;
+}
+
+#profileFromGitHub h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #4a4a4a;
+}
+
+#profileFromGitHub p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+#profileFromGitHub hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    #userInput {
+        width: 180px;
+    }
+    #getProfileBtn {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
