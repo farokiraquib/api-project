@@ -30,6 +30,7 @@ div {
     font-size: 16px;
     outline: none;
     transition: border-color 0.2s;
+    font-size: 15px;
 }
 #userInput:focus {
     border-color: #6da6ff;
