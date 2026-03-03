@@ -83,6 +83,37 @@ button {
     margin: 20px 0;
 }
 
+/* Joke button styling */
+#calljoke {
+    margin-bottom: 30px;
+    background-color: #ff6b6b;
+}
+#calljoke:hover {
+    background-color: #ff5252;
+}
+
+/* Jokes container styling */
+#jokes {
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 25px;
+    text-align: center;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jokes p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    font-style: italic;
+}
+
 /* Responsive adjustments */
 @media (max-width: 480px) {
     #userInput {
